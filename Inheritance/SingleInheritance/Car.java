@@ -1,4 +1,4 @@
-// package Inheritance.SingleInheritance;
+package Inheritance.SingleInheritance;
 
 class Vehicle {
     Vehicle() {
