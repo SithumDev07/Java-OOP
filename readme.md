@@ -2,17 +2,17 @@
 
 ### Java Classes
 
-    A class in Java is a blueprint which includes all your data. A class contains fields (variables) and methods to describe the behavior of an object.
+A class in Java is a blueprint which includes all your data. A class contains fields (variables) and methods to describe the behavior of an object.
 
 ### Java Objects
 
-    An object is a major element in a class which has a state and behavior. It is an instance of a class which can access your data. The ‘new’ keyword is used to create the object.
+An object is a major element in a class which has a state and behavior. It is an instance of a class which can access your data. The ‘new’ keyword is used to create the object.
 
 ### Constructor
 
-    A constructor is a block of code that initializes a newly created object. It is similar to a method in Java but doesn’t have any return type and its name is the same as the class name.
+A constructor is a block of code that initializes a newly created object. It is similar to a method in Java but doesn’t have any return type and its name is the same as the class name.
 
-    Default Constructor - This constructor is created by default by the java compiler at the time of class creation if no other constructor is declared in the class. Sometimes its also called no-argument constructor as it doesn’t contain any parameters.
+Default Constructor - This constructor is created by default by the java compiler at the time of class creation if no other constructor is declared in the class. Sometimes its also called no-argument constructor as it doesn’t contain any parameters.
 
     class Test{
         // Added by the Java Compiler at the Run Time
@@ -23,38 +23,38 @@
         }
     }
 
-    Parameterized Constructor - This constructor is called parameterized as it contains one or more parameters. It is used to provide different values to the distinct objects at the time of their creation.
+Parameterized Constructor - This constructor is called parameterized as it contains one or more parameters. It is used to provide different values to the distinct objects at the time of their creation.
 
 ### Access Modifiers
 
-    Java access modifiers specify the scope of accessibility of a data member, method, constructor or class.
+Java access modifiers specify the scope of accessibility of a data member, method, constructor or class.
 
 ![alt text](https://miro.medium.com/max/700/1*NcQ3U-P7nHbhiHGGLSS-iw.png)
 
 ### Non Access Modifiers
 
-    The non-access modifiers in Java, do not change the accessibility of variables and methods rather they provide special properties. These modifiers can alter the behavior of elements as well.
+The non-access modifiers in Java, do not change the accessibility of variables and methods rather they provide special properties. These modifiers can alter the behavior of elements as well.
 
 ![alt text](https://miro.medium.com/max/700/1*UjM90GYqrimjhB1p4WRENg.png)
 
 
 ### Inheritance
 
-    Inheritance is the property of a child/derived/subclass which allows it to inherit the properties(data members) and functionalities(methods) from its parent/base/superclass.
+Inheritance is the property of a child/derived/subclass which allows it to inherit the properties(data members) and functionalities(methods) from its parent/base/superclass.
 
-    * All objects have the Object class as their top parent.
+* All objects have the Object class as their top parent.
 
-    * Methods can be overridden but attributes can not.
+* Methods can be overridden but attributes can not.
 
-    * To call a parent class constructor, super() is used.
+* To call a parent class constructor, super() is used.
 
-    Java supports 5 types of inheritance:
+Java supports 5 types of inheritance:
 
-    * Single Level Inheritance
-    * Multi-Level Inheritance
-    * Hierarchical Inheritance
-    * Hybrid Inheritance
-    * Multiple Inheritance
+* Single Level Inheritance
+* Multi-Level Inheritance
+* Hierarchical Inheritance
+* Hybrid Inheritance
+* Multiple Inheritance
 
 #### Single Inheritance
 
@@ -99,22 +99,22 @@
 
 #### Multiple Inheritance
 
-    Multiple inheritance is not supported in Java as it leads to the diamond problem. The diamond problem is an ambiguity where the compiler doesn’t know which superclass method to execute in case the superclasses has a method with the same name.
+Multiple inheritance is not supported in Java as it leads to the diamond problem. The diamond problem is an ambiguity where the compiler doesn’t know which superclass method to execute in case the superclasses has a method with the same name.
 
-    * But multiple inheritance in Java can be achieved using interfaces.
+* But multiple inheritance in Java can be achieved using interfaces.
 
 ### Polymorphism
 
-    Polymorphism is the ability of a variable, function or an object to take multiple forms. It allows you to define one interface or method and have multiple implementations. There are two types of polymorphism in Java.
+Polymorphism is the ability of a variable, function or an object to take multiple forms. It allows you to define one interface or method and have multiple implementations. There are two types of polymorphism in Java.
 
-    Two types,
+Two types,
 
-    1. Compile time polymorphism
-    2. Run time polymorphism
+1. Compile time polymorphism
+2. Run time polymorphism
 
 #### Compile Time Polymorphism
 
-    Also called static binding, as the type of the object is determined at the compile time by the compiler itself. Example: Method Overloading
+Also called static binding, as the type of the object is determined at the compile time by the compiler itself. Example: Method Overloading
 
     class Calculator {
         static int add(int a, int b){
@@ -133,7 +133,7 @@
 
 #### Runtime Polymorphism
 
-    Also called dynamic binding as the overridden method is resolved at runtime rather than compile-time. In this, a reference variable is used to call an overridden method of a superclass at run time. Example: Method Overriding.
+Also called dynamic binding as the overridden method is resolved at runtime rather than compile-time. In this, a reference variable is used to call an overridden method of a superclass at run time. Example: Method Overriding.
 
     public class Mobile{
         void sms(){
@@ -158,20 +158,20 @@
 
 ### Abstraction
 
-    Abstraction is the process of hiding the details and showing only the necessary things to the user. You can achieve abstraction in two ways in Java:
+Abstraction is the process of hiding the details and showing only the necessary things to the user. You can achieve abstraction in two ways in Java:
 
-    1. Using abstract classes
-    2. Using interfaces
+1. Using abstract classes
+2. Using interfaces
 
 #### Abstract Classes
 
-    Abstract Class is a class which is declared with an abstract keyword and cannot be instantiated. Few pointers to create an abstract class:
+Abstract Class is a class which is declared with an abstract keyword and cannot be instantiated. Few pointers to create an abstract class:
 
-    * It can contain abstract and non-abstract methods.
+* It can contain abstract and non-abstract methods.
 
-    * It can contain constructors and static methods as well.
+* It can contain constructors and static methods as well.
 
-    * It can contain final methods which force the subclass not to change the body of the method.
+* It can contain final methods which force the subclass not to change the body of the method.
 
     public abstract class MyAbstractClass 
     {
@@ -181,7 +181,7 @@
 
 #### Interface
 
-    An interface in java is a blueprint of a class that contains static constants and abstract methods. It represents the IS-A relation. You need to implement an interface to use its methods or constants.
+An interface in java is a blueprint of a class that contains static constants and abstract methods. It represents the IS-A relation. You need to implement an interface to use its methods or constants.
 
     //Creating an Interface
     public interface Bike { public void start(); }
@@ -206,47 +206,47 @@
 
 #### Encapsulation
 
-    Encapsulation is a process of binding your data and code together as a single unit using getter and setter methods.
+Encapsulation is a process of binding your data and code together as a single unit using getter and setter methods.
 
-    Steps to achieve encapsulation,
+Steps to achieve encapsulation,
 
-    * Declare the variables of a class as private.
-    * Provide public setter and getter methods to modify and view the values of the variables.
+* Declare the variables of a class as private.
+* Provide public setter and getter methods to modify and view the values of the variables.
 
-    public class Artist {
+        public class Artist {
 
-        private String name;
+            private String name;
 
-        //getter method
-        public String getName() { return name; }
+            //getter method
+            public String getName() { return name; }
 
-        //setter method
-        public void setName(String name) { this.name = name; }
+            //setter method
+            public void setName(String name) { this.name = name; }
 
-    }
+        }
 
-    public class Show{
+        public class Show{
 
-        public static void main(String[] args){
+            public static void main(String[] args){
 
-            //creating instance of the encapsulated class
-            Artist s=new Artist(); 
-            //setting value in the name member 
-            s.setName("V"); 
-            //getting value of the name member 
-            System.out.println(s.getName()); 
+                //creating instance of the encapsulated class
+                Artist s=new Artist(); 
+                //setting value in the name member 
+                s.setName("V"); 
+                //getting value of the name member 
+                System.out.println(s.getName()); 
 
-        } 
-    }
+            } 
+        }
 
 ### Exception Handling
 
-    An exception is a problem that arises during the execution of a program. It can occur for various reasons say,
+An exception is a problem that arises during the execution of a program. It can occur for various reasons say,
 
-    * A user has entered an invalid data
-    * File not found
-    * A network connection has been lost in the middle of communications
-    * The JVM has run out of a memory
+* A user has entered an invalid data
+* File not found
+* A network connection has been lost in the middle of communications
+* The JVM has run out of a memory
 
 
 ![alt text](https://miro.medium.com/max/700/1*H1w53c6-i93iXR6fipIr4A.png)
