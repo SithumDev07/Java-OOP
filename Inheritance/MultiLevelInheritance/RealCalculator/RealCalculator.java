@@ -1,4 +1,4 @@
-// package Inheritance.SingleInheritance;
+//* package Inheritance.MultiLevelInheritance.RealCalculator;
 
 // * inheritance is the process by which one object acquires the properties of
 // * another object.
