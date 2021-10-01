@@ -245,6 +245,12 @@ Since Java is not supporting multiple inheritance, interfaces is the way to achi
             }
         }
 
+##### When to use interfaces instead of abstract classes?
+
+* When we talk about abstract classes we are defining the characteristics of an object type and specify what an object is.
+
+* When we talk about an interface, we define the capabilities that we promise to provide. We are talking about establishing a contract about what an object can do.
+
 #### Encapsulation
 
 Encapsulation is a process of binding your data and code together as a single unit using getter and setter methods.
