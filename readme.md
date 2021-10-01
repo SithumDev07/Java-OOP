@@ -208,36 +208,42 @@ Abstract Class is a class which is declared with an abstract keyword and cannot 
 
 * It can contain final methods which force the subclass not to change the body of the method.
 
-    public abstract class MyAbstractClass 
-    {
-        public abstract void abstractMethod();
-        public void display(){ System.out.println("Concrete method");  }
-    }
+        public abstract class MyAbstractClass 
+        {
+            public abstract void abstractMethod();
+            public void display(){ System.out.println("Concrete method");  }
+        }
+
+* Can't create any instances from abstract classes.
 
 #### Interface
 
 An interface in java is a blueprint of a class that contains static constants and abstract methods. It represents the IS-A relation. You need to implement an interface to use its methods or constants.
 
-    //Creating an Interface
-    public interface Bike { public void start(); }
+Since Java is not supporting multiple inheritance, interfaces is the way to achieve multiple inheritance.
 
-    //Creating classes to implement Bike interface
-    class Honda implements Bike{
-        public void start() { System.out.println("Honda Bike"); }
-    }
+* Similar to the abstract classes we cannot create any instances of interfaces.
 
-    class Apache implements Bike{
-        public void start() { System.out.println("Apache Bike"); }
-    }
+        //Creating an Interface
+        public interface Bike { public void start(); }
 
-    class Rider{
-        public static void main(String args[]){ 
-            Bike b1=new Honda(); 
-            b1.start();
-            Bike b2=new Apache();
-            b2.start(); 
+        //Creating classes to implement Bike interface
+        class Honda implements Bike{
+            public void start() { System.out.println("Honda Bike"); }
         }
-    }
+
+        class Apache implements Bike{
+            public void start() { System.out.println("Apache Bike"); }
+        }
+
+        class Rider{
+            public static void main(String args[]){ 
+                Bike b1=new Honda(); 
+                b1.start();
+                Bike b2=new Apache();
+                b2.start(); 
+            }
+        }
 
 #### Encapsulation
 

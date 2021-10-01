@@ -1,8 +1,9 @@
-package Abstraction.BasicExample;
+package Abstraction.AbstractClasses.BasicExample;
 
 //* Abstract classes have both abstract and concrete methods. If the method is abstract then the method can't have a mehtod body.
 //* When we extend an abstract class we have to override all the abstract method event those mehtods are not doing at all.
 //* Also can use final method which can't change by child classes by overriding.
+//* Can't create any instances from abstract classes.
 
 abstract class Shape {
 

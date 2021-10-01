@@ -1,4 +1,4 @@
-package Abstraction.EasyExample;
+package Abstraction.AbstractClasses.EasyExample;
 
 //* Let's say we wan't to make a mobile phone which can perform special tasks.
 //* There can be situations where we already know how to implement some tasks but some are not.
