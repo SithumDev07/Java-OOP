@@ -1,4 +1,4 @@
-// package Polymorphism.RuntimePolymorphism;
+package Polymorphism.RuntimePolymorphism;
 
 //* Static methods can't be overridden.
 //* Use @override annotation for the overridden method, so if we don’t follow the overriding rules then the compiler will show the error.

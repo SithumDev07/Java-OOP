@@ -194,6 +194,10 @@ Abstraction is the process of hiding the details and showing only the necessary 
 1. Using abstract classes
 2. Using interfaces
 
+Example: A real-life example of abstraction can be using an electric circuit board. We use the buttons to turn on and off the electrical devices through the circuit board. We know a lot of things happen inside the board. Here we are using the functionality provided and we aren't interested in the actual working of the circuit board.
+
+Now let’s relate this example with classes and interface. The surface of the electric board is an Interface and the actual implementation of the electric circuit board is a class.
+
 #### Abstract Classes
 
 Abstract Class is a class which is declared with an abstract keyword and cannot be instantiated. Few pointers to create an abstract class:
