@@ -40,7 +40,7 @@ class B extends A {
 
 public class Test {
     public static void main(String[] args) {
-        B b = new B();
+        new B();
         // Second second = new Second();
         // System.out.println(second.care());
     }

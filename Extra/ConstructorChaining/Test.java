@@ -1,4 +1,4 @@
-// package Extra.ConstructorChaining;
+package Extra.ConstructorChaining;
 
 //* Constructor chaining is the process of calling one constructor from another constructor with respect to current object. 
 //* Within same class: It can be done using this() keyword for constructors in same class
@@ -24,6 +24,6 @@ class Temp {
 
 public class Test {
     public static void main(String[] args) {
-        Temp temp = new Temp();
+        new Temp();
     }
 }
