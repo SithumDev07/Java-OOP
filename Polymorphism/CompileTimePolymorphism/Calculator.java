@@ -2,6 +2,7 @@ package Polymorphism.CompileTimePolymorphism;
 
 //* Polymorphism is the ability of a variable, function or an object to take multiple forms.
 //* In Compile time polymorphism method overloading.
+//* Also method overloading can happen in inheritance.
 public class Calculator {
     void add(int i, int j) {
         System.out.println(i + j);

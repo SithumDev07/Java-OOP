@@ -114,26 +114,57 @@ Two types,
 
 #### Compile Time Polymorphism
 
-Also called static binding, as the type of the object is determined at the compile time by the compiler itself. Example: Method Overloading
+Method overloading means two or more methods in a class having the same name but different parameters(arguments).
+Also called static binding, as the type of the object is determined at the compile time by the compiler itself. Example: Method Overloading.
+Methods may or may not have a different return type.
+Method overloading reduces duplicate code and allows us to use the same method name for different purposes.
+Method overloading is also called Compile time polymorphism because, at the time of compiling the code, the compiler decides which method is going to be called based on the method name, return type, and arguments.
+Overloading can also happen in the case of inheritance. This is because the Child class already has one version of inherited methods from the parent class and can also write another overloaded version of that method.
 
-    class Calculator {
-        static int add(int a, int b){
-            return a+b;
-        }
+##### Rules for Method Overloading
 
-        static double add( double a, double b){
-            return a+b;
-        }
+* Methods must have the same name but different method signatures (different number of arguments, different types of arguments, a different sequence of arguments).
 
-        public static void main(String args[]){
-            System.out.println(Calculator.add(123,17));
-            System.out.println(Calculator.add(18.3,1.9));
+* Overloaded methods may or may not have a different return type.
+
+* Overloaded methods may or may not have different access modifiers.
+
+* Overloaded methods may or may not throw different checked or unchecked Exceptions.
+
+        class Calculator {
+            static int add(int a, int b){
+                return a+b;
+            }
+
+            static double add( double a, double b){
+                return a+b;
+            }
+
+            public static void main(String args[]){
+                System.out.println(Calculator.add(123,17));
+                System.out.println(Calculator.add(18.3,1.9));
+            }
         }
-    }
 
 #### Runtime Polymorphism
 
 Also called dynamic binding as the overridden method is resolved at runtime rather than compile-time. In this, a reference variable is used to call an overridden method of a superclass at run time. Example: Method Overriding.
+
+##### Method Overriding
+
+Method overriding is defining a method in the child class with the same method name and same method signature which is already written in the parent class.
+Return type of overridden method can be a subtype of the return type of parent class method.
+
+* E.g. If the parent class method returns Vehicle then Subclass’s overridden method’s return type can be any subclass of Vehicle class, for example, Car can be a return type of overridden method in child class. (Assuming Vehicle as parent class and Car as a child class of Vehicle class).
+
+It can’t have a lower access modifier.
+
+E.g. If the parent class method has a protected access modifier then the child class overridden method cannot have a private access modifier, but the public is allowed.
+
+Use @override annotation for the overridden method, so if we don’t follow the overriding rules then the compiler will show the error.
+Method overriding is called Dynamic Polymorphism because the method which is going to be called is decided at run time by the JVM.
+Static methods can’t be overridden, only instance methods are overridden.
+
 
     public class Mobile{
         void sms(){
