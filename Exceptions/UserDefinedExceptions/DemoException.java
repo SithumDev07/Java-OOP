@@ -1,4 +1,6 @@
 
+package Exceptions.UserDefinedExceptions;
+
 public class DemoException {
     public static void main(String[] args) {
         int i = 5;
