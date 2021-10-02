@@ -551,6 +551,18 @@ You might have heard that final, finally and finalize are keywords in Java. Yes,
         throw new ArithmeticException("Incorrect");
     }
 
+#### Throws
+
+throws is a keyword in java which is used to suppress the errors.
+
+    public class DemoException{
+
+        public static void main(String args[]) throws Exception{
+
+        }
+        
+    }
+
 ### Nested Class
 
 In Java, a class can be defined within another class and such classes are known as nested classes. These classes help you to logically group classes that are only used in one place. This increases the use of encapsulation and creates a more readable and maintainable code.
