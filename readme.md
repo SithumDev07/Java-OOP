@@ -260,6 +260,10 @@ Steps to achieve encapsulation,
 * Declare the variables of a class as private.
 * Provide public setter and getter methods to modify and view the values of the variables.
 
+Encapsulation refers to the bundling of fields and methods inside a single class.
+
+It prevents outer classes from accessing and changing fields and methods of a class. This also helps to achieve data hiding.
+
         public class Artist {
 
             private String name;
