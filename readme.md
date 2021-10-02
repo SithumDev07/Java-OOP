@@ -245,6 +245,22 @@ Since Java is not supporting multiple inheritance, interfaces is the way to achi
             }
         }
 
+##### Default Method In Interface
+
+When we consider abstract classes and interfaces only difference is, in abstract classes we can define abstract methods (Without method body) or regular methods. But in interfaces we can't achieve that. Only thing can do is define methods.
+
+But after Java 1.8 update, using deafult keyword we can define methods with method body.
+
+    interface demo{
+        void print(); // regular method
+        defaul void show(){
+            System.out.println("Default method of interface of demo");
+        }
+    }
+
+Also we can override default methods.
+
+
 ##### When to use interfaces instead of abstract classes?
 
 * When we talk about abstract classes we are defining the characteristics of an object type and specify what an object is.
