@@ -334,7 +334,7 @@ an Error is used by the Java run-time system (JVM) to indicate errors that are a
 
 It is an exception that occurs at compile time, also called compile time exceptions. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using throws keyword.
 
-##### Checked Exceptions
+##### Unchecked Checked Exceptions
 
 It is an exception that occurs at the time of execution. These are also called Runtime Exceptions. In C++, all exceptions are unchecked, so it is not forced by the compiler to either handle or specify the exception. It is up to the programmers to specify or catch the exceptions.
 

@@ -1,7 +1,5 @@
 package Abstraction.Interfaces.NestedInterfaces;
 
-import Abstraction.Interfaces.NestedInterfaces.vogue.noor;
-
 interface vogue {
     void message();
 
